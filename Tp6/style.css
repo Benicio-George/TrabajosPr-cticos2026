@@ -18,19 +18,21 @@ div{
 }
 
 p{
-    font-size: 10px;
+    font-size: 20px;
     color: orange;
 }
 
 button{
-    background-color: green;
-    color: red;
+    background-color: rgb(17, 0, 255);
+    color: rgb(255, 217, 0);
     padding: 10px;
     border: none;
     border-radius: 20px;
     transition: 0.5s;
+    margin: 15px;
 }
 
 button:hover{
-    background-color: palegreen;
+    background-color: rgb(136, 138, 255);
+    transform: scale(1.1) rotate(5deg);
 }
