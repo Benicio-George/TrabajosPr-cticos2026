@@ -1,24 +1,34 @@
 let texto = document.querySelector("#texto")
 let btn1 = document.querySelector("#btn1")
 let edad = 14
+let nombreusuario1 = "Nahuel"
+let nombreusuario2 = "Marc"
+let btn2 = document.querySelector("#btn2")
+let nombre = document.querySelector("#nombre")
 
 btn1.onclick = function(){
 texto.textContent = "resultado"
     if(edad >= 18)
     {
-        alert("Eres mayor de edad")
+        texto.textContent = "Eres mayor de edad"
     }else{
-        alert("Eres menor de edad")
+        texto.textContent = "Eres menor de edad"
     }
 }
-
-let nombreusuario = "Nahuel"
-let btn2 = document.querySelector("#btn2")
-let nombre = document.querySelector("#nombre")
-
 btn2.onclick = function(){
-    if(nombreusuario = "Nahuel"){nombre.textContent = "Bienvenido Nahuel, ¿cómo estás?"}
+    if((nombreusuario1 == "Nahuel") || (nombreusuario2 == "Marcos"))
+    {
+        nombre.textContent = "bienvenido " + nombreusuario1 + " ¿Como estas?"
+    }   
     else{
-        nombre.textContent = "Bienvenido usuario"
+        nombre.textContent = "Bienvenido " + nombreusuario2 
     }
+
 }
+
+let numero1 = 17
+let btn3 = document.querySelector("#btn3")
+let resultado = document.querySelector("#resultado")
+
+if(nu)
+ 
