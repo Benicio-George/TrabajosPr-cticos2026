@@ -1,10 +1,6 @@
 let p1 = document.querySelector("#p1")
 let btn1 = document.querySelector("#btn1")
-let edad1 = 14
-let nombreusuario1 = "Nahuel"
-let nombreusuario2 = "Marc"
-let btn2 = document.querySelector("#btn2")
-let p2 = document.querySelector("#p2")
+let edad1 = 18
 
 btn1.onclick = function(){
 p1.textContent = "resultado"
@@ -15,17 +11,22 @@ p1.textContent = "resultado"
         p1.textContent = "Eres menor de edad"
     }
 }
+
+let nombreUsuario = "Marcos"
+let btn2 = document.querySelector("#btn2")
+let p2 = document.querySelector("#p2")
+
 btn2.onclick = function(){
-    if((nombreusuario1 == "Nahuel") || (nombreusuario2 == "Marcos"))
+    if(nombreUsuario == "Nahuel" || nombreUsuario == "Marcos")
     {
-        p2.textContent = "bienvenido " + nombreusuario1 + " ¿Como estas?"
+        p2.textContent = "Bienvenido " + nombreUsuario + " ¿cómo estás?"
     }   
     else{
-        p2.textContent = "Bienvenido " + nombreusuario2 
+        p2.textContent = "Bienvenido " + nombreUsuario
     }
 }
 
-let numero1 = 67
+let numero1 = 45
 let p3 = document.querySelector("#p3")
 let btn3 = document.querySelector("#btn3")
 
@@ -62,15 +63,15 @@ else if(edad2 > 60){
     p4.textContent = "Anciano (60 años o más)"
 }}
 
-let dia = "sabado"
+let dia = "lunes"
 let p5 = document.querySelector("#p5")
 let btn5 = document.querySelector("#btn5")
 
 btn5.onclick = function(){
-    if(dia == "lunes" || "martes" || "miercoles" || "jueves" || "viernes"){
+    if(dia == "lunes" || dia == "martes" || dia == "miercoles" || dia == "jueves" || dia == "viernes"){
         p5.textContent = "Es un día laborable"
     }
-    else if(dia == "sabado" || "domingo"){
+    else if(dia == "sabado" || dia == "domingo"){
         p5.textContent = "Es fin de semana"
     }
 }
