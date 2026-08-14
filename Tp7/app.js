@@ -1,90 +1,98 @@
-let p1 = document.querySelector("#p1")
-let btn1 = document.querySelector("#btn1")
+// Ejercicio 1
+let pedad1 = document.querySelector("#pedad1")
+let btnedad1 = document.querySelector("#btnedad1")
 let edad1 = 18
 
-btn1.onclick = function(){
-p1.textContent = "resultado"
+btnedad1.onclick = function(){
     if(edad1 >= 18)
     {
-        p1.textContent = "Eres mayor de edad"
+        pedad1.textContent = "Eres mayor de edad"
     }else{
-        p1.textContent = "Eres menor de edad"
+        pedad1.textContent = "Eres menor de edad"
     }
 }
 
+// Ejercicio 2 y 3
 let nombreUsuario = "Marcos"
-let btn2 = document.querySelector("#btn2")
-let p2 = document.querySelector("#p2")
+let btnnombre = document.querySelector("#btnnombre")
+let pnombre = document.querySelector("#pnombre")
 
-btn2.onclick = function(){
+btnnombre.onclick = function(){
     if(nombreUsuario == "Nahuel" || nombreUsuario == "Marcos")
     {
-        p2.textContent = "Bienvenido " + nombreUsuario + " ¿cómo estás?"
+        pnombre.textContent = "Bienvenido " + nombreUsuario + " ¿cómo estás?"
     }   
     else{
-        p2.textContent = "Bienvenido " + nombreUsuario
+        pnombre.textContent = "Bienvenido " + nombreUsuario
     }
 }
 
-let numero1 = 45
-let p3 = document.querySelector("#p3")
-let btn3 = document.querySelector("#btn3")
 
-btn3.onclick = function(){
+// Ejercicio 4
+let numero1 = 45
+let presultado = document.querySelector("#presultado")
+let btnresultado = document.querySelector("#btnresultado")
+
+btnresultado.onclick = function(){
 if(numero1 > 0){
-    p3.textContent = "El número es positivo"
+    presultado.textContent = "El número es positivo"
 } 
 else if(numero1 < 0){
-    p3.textContent = "El número es negativo"
+    presultado.textContent = "El número es negativo"
 }
 else if(numero1 == 0){
-    p3.textContent = "El número es cero"
+    presultado.textContent = "El número es cero"
 }
 }
 
+
+// Ejercicio 5
 let edad2 = 46
-let p4 = document.querySelector("#p4")
-let btn4 = document.querySelector("#btn4")
+let pedad2 = document.querySelector("#pedad2")
+let btnedad2 = document.querySelector("#btnedad2")
   
-btn4.onclick = function(){
+btnedad2.onclick = function(){
 if((edad2 >= 6) && (edad2 <= 11)){
-    p4.textContent = "Niño (6 a 11 años)"
+    pedad2.textContent = "Niño (6 a 11 años)"
 }
 else if((edad2 >= 12) && (edad2 <= 18)){
-p4.textContent = "Adolescente (12 a 18 años)"
+    pedad2.textContent = "Adolescente (12 a 18 años)"
 }
 else if((edad2 >= 19) && (edad2 <= 26)){
-    p4.textContent = "Joven (19 a 26 años)"
+    pedad2.textContent = "Joven (19 a 26 años)"
 }
 else if((edad2 >= 27) && (edad2 <= 59)){
-    p4.textContent = "Adulto (27 a 59 años)"
+    pedad2.textContent = "Adulto (27 a 59 años)"
 } 
 else if(edad2 > 60){
-    p4.textContent = "Anciano (60 años o más)"
+    pedad2.textContent = "Anciano (60 años o más)"
 }}
 
+// Ejercicio 6
 let dia = "lunes"
-let p5 = document.querySelector("#p5")
-let btn5 = document.querySelector("#btn5")
+let pdia = document.querySelector("#pdia")
+let btndia = document.querySelector("#btndia")
 
-btn5.onclick = function(){
+btndia.onclick = function(){
     if(dia == "lunes" || dia == "martes" || dia == "miercoles" || dia == "jueves" || dia == "viernes"){
-        p5.textContent = "Es un día laborable"
+        pdia.textContent = "Es un día laborable"
     }
     else if(dia == "sabado" || dia == "domingo"){
-        p5.textContent = "Es fin de semana"
+        pdia.textContent = "Es fin de semana"
     }
 }
 
-let btn6 = document.querySelector("#btn6")
-let p6 = document.querySelector("#p6")
+
+// Ejercicio 7
+let btncontrasenia = document.querySelector("#btncontrasenia")
+let pcontrasenia = document.querySelector("#pcontrasenia")
 let contrasenia = "sehh"
 
-btn6.onclick = function(){
+btncontrasenia.onclick = function(){
     if (contrasenia == "sehh"){
-        p6.textContent = "Acceso concedido"
+        pcontrasenia.textContent = "Acceso concedido"
     }
     else{
-        p6.textContent = "Acceso denegado"
+        pcontrasenia.textContent = "Acceso denegado"
     }
 }
