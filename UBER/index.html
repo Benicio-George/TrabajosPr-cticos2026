@@ -6,18 +6,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<!--ACTIVIDAD:
+    Uber necesita registrar los conductores para su servicio de Uber premium, para eso los conductorestienen que cumplir lo siguiente: 
+    - 4 estrellas o más de puntuación 
+    - Un auto con menos e 10años de antiguedad 
+    - Menos de 150.000 km.
+    Si el usuario cumple los requisitos, el sistema tiene que indicarle que puede formar parte de Uber premium,de lo contrario puede dar el servicio de Uber X-->
 <body>
-<!--Calificación-->
-    <p id="texto">Uber Black o Uber X?</p>
+    <form>
+        <p id="texto">Eres Uber Black o Uber X?</p>
 
-    <input type="number" placeholder="Calificación" id="inputcalificacion" min="0" max="5">
-
-    <input type="number" placeholder="Kilometraje" id="inputkm" min="0">
-
-    <input type="number" placeholder="Años del vehículo" id="inputanos" min="0">
-
-    <button id="btn">verificar</button>
-
+        <input type="number" placeholder="Calificación" id="inputcalificacion" min="0" max="5">
+    
+        <input type="number" placeholder="Kilometraje" id="inputkm">
+    
+        <input type="number" placeholder="Años del vehículo" id="inputanos">
+    
+        <button id="btn">verificar</button>
+    
+    </form>
+    
 </body>
 <script src="app.js"></script>
 </html>

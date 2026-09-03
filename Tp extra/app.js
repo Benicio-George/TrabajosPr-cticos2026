@@ -1,17 +1,17 @@
 /*Ejercicio 1 y 2*/
 let texto1 = document.querySelector("#texto1");
-let monto1 = document.querySelector("#inputmonto1");
-let edad = document.querySelector("#inputedad");
-let boton1 = document.querySelector("#boton1");
+let inputmonto = document.querySelector("#inputmonto");
+let inputedad = document.querySelector("#inputedad");
+let btndescuento = document.querySelector("#btndescuento");
 let descuento = 0;
 
-boton1.onclick = function() {
-    if (monto1.value >= 50000) {
-        descuento = monto1.value * 0.10;
+btndescuento.onclick = function() {
+    if (inputmonto.value >= 50000) {
+        descuento = inputmonto.value * 0.10;
         texto1.textContent = "Se aplico un descuento del 10%: $" + descuento;
         texto1.style.color = "green";
-    } else if ((monto1.value < 50000) && (edad.value >= 65)) {
-        descuento = monto1.value * 0.15;
+    } else if ((inputmonto.value < 50000) && (inputedad.value >= 65)) {
+        descuento = inputmonto.value * 0.15;
         texto1.textContent = "Se aplico un descuento del 15%: $" + descuento;
         texto1.style.color = "green";
     } else {
@@ -22,35 +22,40 @@ boton1.onclick = function() {
 
 /*Ejercicio 3*/
 let texto2 = document.querySelector("#texto2");
-let año = document.querySelector("#inputaño");
-let boton2 = document.querySelector("#btnaño");
+let inputaño = document.querySelector("#inputaño");
+let btnaño = document.querySelector("#btnaño");
 let añohoy = 2026;
 let edad2;
 
-boton2.onclick = function() {
-    edad2 = añohoy - año.value;
-    texto2.textContent = "Su edad es: " + edad2;
+btnaño.onclick = function() {
+    edad2 = añohoy - inputaño.value;
+    texto2.textContent = "Tienes " + edad2 + " años";
 }
 
 /*Ejercicio 4*/
-let texto4 = document.querySelector('#texto4')
+let texto3 = document.querySelector('#texto3')
 let inputHora = document.querySelector('#inputHora')
-let botonTurno = document.querySelector('#botonTurno')
+let btnTurno = document.querySelector('#btnTurno')
 
 
-botonTurno.onclick = function () {
+btnTurno.onclick = function () {
     if (inputHora.value == 17) {
-        texto4.textContent = 'El cliente asignado es: Juan Perez'
+        texto3.textContent = 'El cliente asignado es: Juan Perez'
+        texto3.style.color = '#F1F5F9'
     } else if (inputHora.value == 18) {
-        texto4.textContent = 'El cliente asignado es: Marco Polo'
+        texto3.textContent = 'El cliente asignado es: Marco Polo'
+        texto3.style.color = '#F1F5F9'
     }else if (inputHora.value == 19) {
-        texto4.textContent = 'El cliente asignado es: Esteban Suarez'
+        texto3.textContent = 'El cliente asignado es: Esteban Suarez'
+        texto3.style.color = '#F1F5F9'
     }else if (inputHora.value == 20) {
-        texto4.textContent = 'El cliente asignado es: Elias Polo'
+        texto3.textContent = 'El cliente asignado es: Elias Polo'
+        texto3.style.color = '#F1F5F9'
     }else if (inputHora.value == 21) {
-        texto4.textContent = 'El cliente asignado es: Martin Juarez'
+        texto3.textContent = 'El cliente asignado es: Martin Juarez'
+        texto3.style.color = '#F1F5F9'
     }else{
-        texto4.style.color = 'red'
-        texto4.textContent= 'No hay turnos cargados a esa hora, probar con horas entre 17 a 21'
+        texto3.style.color = 'red'
+        texto3.textContent= 'No hay turnos cargados a esa hora, probar con horas entre 17 a 21'
     }
 }
