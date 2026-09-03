@@ -1,0 +1,30 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.datos{
+    display: flex;
+    justify-content: center;
+}
+
+.resultados{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    align-items: center;
+   
+}
+
+.datos-3{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+input{
+    width: 200px;
+}
