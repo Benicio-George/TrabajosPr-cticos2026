@@ -5,10 +5,10 @@ let inputkm = document.querySelector('#inputkm');
 let inputanos = document.querySelector('#inputanos');
 
 btn.onclick = function() {
-    if ((inputcalificacion.value > 4 || inputkm.value < 50000 || inputanos.value < 5)) {
+    if ((inputcalificacion.value >= 4 || inputkm.value <= 50000 || inputanos.value <= 5)) {
         texto.textContent = "Formas parte de Uber Black";
     } 
-    else if ((inputcalificacion.value > 4 || inputkm.value < 50000 || inputanos.value < 5){
+    else{ 
         texto.textContent = "Formas parte de Uber X";
     }
 }
